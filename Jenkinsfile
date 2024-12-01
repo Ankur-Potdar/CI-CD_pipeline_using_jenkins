@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = 'mynginx/webapp'
+        DOCKER_IMAGE = 'royalap/webapp'
         DOCKER_HUB_USERNAME = 'royalap'
         DOCKER_HUB_PASSWORD = credentials('docker-hub-credentials') // Create Jenkins credentials for Docker Hub
         GITHUB_REPO = 'https://github.com/Ankur-Potdar/CI-CD_pipeline_using_jenkins.git'
